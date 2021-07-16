@@ -10,7 +10,7 @@ import axios from "axios";
  * @param {String} author Author created in New users section 
  */
 const handleSubmit = async (title, content, author) => {
-  await axios.post(`https://sticknote.herokuapp.com/api/notes`, {
+  await axios.post(`https://sticknotes-api.herokuapp.com/api/notes`, {
     title: title,
     content: content,
     author: author,

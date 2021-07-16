@@ -93,7 +93,7 @@ function FormNotes({ handleSubmit }) {
   useEffect(() => {
     async function getUsers() {
       try {
-        const res = await axios.get(`https://sticknote.herokuapp.com/api/users`);
+        const res = await axios.get(`https://sticknotes-api.herokuapp.com/api/users`);
         const json = res.data;
 
         setAuthors(json);

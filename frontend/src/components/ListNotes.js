@@ -27,7 +27,7 @@ const initialValues = {
  * @param {Function} close Function that allows closing the modal window
  */
 const handleDelete = async (set, list, close) => {
-    await axios.delete(`https://sticknote.herokuapp.com/api/notes/${idOption}`);
+    await axios.delete(`https://sticknotes-api.herokuapp.com/api/notes/${idOption}`);
     close();
     set(!list);
 };
@@ -48,7 +48,7 @@ export default function NotesList() {
  */
  const onSubmit = async (values) => {
 
-  await axios.put(`https://sticknote.herokuapp.com/api/notes/${idOption}`, {
+  await axios.put(`https://sticknotes-api.herokuapp.com/api/notes/${idOption}`, {
     title: values.title,
     content: values.content,
     author: values.author

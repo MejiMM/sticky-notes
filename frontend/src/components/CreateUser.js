@@ -40,7 +40,7 @@ export default function CreateUser() {
    * @param {String} id Identification number for the user to be deleted
    */
   async function handleDelete(id) {
-    await axios.delete(`https://sticknote.herokuapp.com/api/users/${id}`);
+    await axios.delete(`https://sticknotes-api.herokuapp.com/api/users/${id}`);
 
     setList(!list);
   }
@@ -50,7 +50,7 @@ export default function CreateUser() {
    * @param {String} values Name that comes from the FormUser component
    */
   async function handleCreate(values) {
-    await axios.post(`https://sticknote.herokuapp.com/api/users`, {
+    await axios.post(`https://sticknotes-api.herokuapp.com/api/users`, {
       username: values,
     });
 
@@ -60,7 +60,7 @@ export default function CreateUser() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await axios.get(`https://sticknote.herokuapp.com/api/users`);
+        const res = await axios.get(`https://sticknotes-api.herokuapp.com/api/users`);
         const json = await res.data;
 
         setUser(json);
