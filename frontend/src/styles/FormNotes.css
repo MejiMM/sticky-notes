@@ -1,0 +1,112 @@
+.form--container {
+    min-height: 70vh;
+}
+
+.form {
+    width: 100%;
+    min-height: 40vh;
+    background-color: #757575;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -2px 2px 17px 0px #757575;
+    font-size: 1em;
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.form h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div--one, .div--two, .div--three {
+    width: 70%;    
+    position: relative;
+}
+
+.inputOne, .inputTwo, .inputThree {
+    width: 100%;
+    margin-top: 10%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.labelOne, .labelTwo, .labelThree {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.form button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 30%;
+    min-height: 5vh;
+    font-size: 1em;
+}
+
+.form button img {
+    width: 30%;
+    margin-right: 7%;
+    vertical-align: middle;
+}
+
+.form--options {
+   width: 50%;
+   padding: 2%;
+   margin-top: 5%;
+   border-radius: 10px;
+   border: none; 
+}
+
+.inputOne:focus + .labelOne, .inputTwo:focus + .labelTwo, .inputThree:focus + .labelThree {
+    animation: notes .1s ease forwards;
+}
+
+@keyframes notes {
+    from {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(-100%) scale(90%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .form--container {
+        width: 70%;
+    }
+
+    .form {
+        position: relative;
+        margin-top: 5%;
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .form--container {
+        min-height: 78vh;
+    }
+
+    .form {
+        margin-top: 15%;
+    }
+}

@@ -1,0 +1,86 @@
+.ul--box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 70vh;
+    margin: 0;
+    padding: 2%;
+    background: url("../user-back.jpg");
+    background-position: 0 bottom;
+    background-size: cover;
+    color: whitesmoke;
+    text-shadow: 1px 2px 19px #000000;
+}
+
+.ul--box li {
+    min-width: 25%;
+    max-height: 25vh;
+    list-style: none;
+    padding-top: 12%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    background: url("../id-card-solid.svg") no-repeat;
+    background-color: #757575;
+    background-size: 50%;
+    background-position: top center;
+    margin-bottom: 5%;
+}
+
+.ul--box li p {
+    font-size: .9em;
+    width: 100%;
+    color: black;
+}
+
+.ul--box li button {
+    position: relative;
+    bottom: 5%;
+    border-color: rgba(54, 53, 53, 0.589);
+    width: 35%;
+    height: 20%;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+    .ul--box {
+        min-width: 80vw;
+    }
+
+    .ul--box li {
+        width: 40%;
+        max-height: 30vh;
+        background-size: 35%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+   .ul--box {
+    width: 90vw;
+   }
+
+   .ul--box li {
+       width: 80%;
+       min-height: 45vh;
+       max-height: 50vh;
+   }
+
+   .ul--box li p {
+       margin-top: 13%;
+   }
+
+   .ul--box li button {
+       bottom: -5%;
+   }
+
+   span {
+       position: relative;
+       top: 20%
+   }
+
+}

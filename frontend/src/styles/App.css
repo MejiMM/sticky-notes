@@ -1,0 +1,9 @@
+html {
+    overflow: auto;
+}
+
+.app {
+    background: linear-gradient(to right, #1c2f9c, #0312a0);
+    color: rgb(240, 236, 236);   
+    font-family: 'Encode Sans SC', sans-serif;
+}
