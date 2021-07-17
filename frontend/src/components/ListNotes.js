@@ -85,7 +85,7 @@ export default function NotesList() {
   useEffect(() => {
     async function getNotes() {
       await axios
-        .get(`https://sticknote.herokuapp.com/api/notes`)
+        .get(`https://sticknotes-api.herokuapp.com/api/notes`)
         .then((json) => setNotes(json.data))
         .catch((err) => console.log(err));
     }
