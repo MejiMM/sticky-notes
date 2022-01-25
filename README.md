@@ -7,3 +7,13 @@ Once downloaded, open a command console and run
 --> npm install 
 
 This we will install the dependencies so that the client can work without problems
+
+--------------------------------------------------------------------------------------------
+
+Navigate to the "backend" folder
+
+---> ..
+---> cd backend
+---> npm install
+
+Install the necessary dependencies for the server
